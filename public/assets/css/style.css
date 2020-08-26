@@ -1,0 +1,459 @@
+@import url("../vendor/bootstrap-4.3.1/css/bootstrap.min.css");
+@import url("../vendor/fontawesome/css/all.css");
+@font-face {
+    font-family: "Poppins";
+    src: url("../fonts/Poppins/Poppins-Regular.ttf");
+}
+
+:root {
+    --color-green-primary: #02d47d;
+    --color-green-secondary: #bfffe3;
+    --color-pastel: #ffd5cd;
+    --color-orange-strong: #f5b971;
+    --color-orange-soft: #ffecc7;
+    --color-yellow: #fdd998;
+}
+
+.bgr-green {
+    background-color: var(--color-green-secondary) !important;
+}
+.bgr-pastel {
+    background-color: var(--color-pastel) !important;
+}
+.bgr-orange {
+    background-color: var(--color-orange-soft) !important;
+}
+.txt-green {
+    color: var(--color-green-primary) !important;
+}
+.txt-orange {
+    color: var(--color-orange-strong) !important;
+}
+.txt-yellow {
+    color: var(--color-yellow) !important;
+}
+.bs {
+    box-shadow: 0 0 10px #81feca;
+}
+.mt-100 {
+    margin-top: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    background: whitesmoke;
+}
+
+header {
+    position: relative;
+    background: white;
+    z-index: 2;
+}
+
+nav input[type="search"] {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 5px rgb(222, 222, 222);
+}
+nav input[type="search"]::placeholder {
+    font-size: 14px;
+    color: rgb(177, 174, 174);
+}
+nav input[type="search"]:focus {
+    box-shadow: 0 0 5px rgb(222, 222, 222);
+}
+
+nav a {
+    color: var(--color-green-primary);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+nav a.nav-link:hover {
+    color: var(--color-green-primary);
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-green-primary);
+}
+.navbar-brand img {
+    width: 100px;
+}
+.nav-link img {
+    width: 15px;
+}
+
+#carouselSlider .caption {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    z-index: 1;
+}
+#carouselSlider .caption h3 {
+    line-height: 2.8rem;
+    color: whitesmoke;
+}
+#carouselSlider .caption h3 span {
+    color: var(--color-orange-strong);
+    background: whitesmoke;
+}
+.carousal-inner,
+.carousel-item,
+.carousel-item img {
+    border-radius: 10px;
+}
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+.person {
+    position: absolute;
+    top: -120px;
+    right: 2%;
+    z-index: 1;
+}
+.person img {
+    width: 420px;
+}
+.banner-pasta,
+.banner-green {
+    width: 100%;
+    height: auto;
+    color: whitesmoke;
+    border: none;
+    border-radius: 10px;
+}
+.banner-pasta {
+    background: var(--color-yellow);
+}
+.banner-pasta .img-bg {
+    background: var(--color-orange-soft);
+    width: 120px;
+    height: 120px;
+    clip-path: polygon(
+        50% 0%,
+        83% 12%,
+        100% 43%,
+        94% 78%,
+        68% 100%,
+        32% 100%,
+        6% 78%,
+        0% 43%,
+        17% 12%
+    );
+}
+.banner-pasta img {
+    width: 100px;
+}
+
+.banner-green {
+    background: var(--color-green-primary);
+}
+.banner-green .img-bg {
+    background: var(--color-green-secondary);
+    width: 120px;
+    height: 120px;
+    clip-path: polygon(
+        50% 0%,
+        83% 12%,
+        100% 43%,
+        94% 78%,
+        68% 100%,
+        32% 100%,
+        6% 78%,
+        0% 43%,
+        17% 12%
+    );
+}
+.banner-green img {
+    width: 110px;
+}
+
+.filter {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 5px;
+}
+.box {
+    width: 100%;
+    height: 32px;
+    border-radius: 50px;
+    border: none;
+    transition: 0.3s;
+}
+.box:hover {
+    transform: scale(1.1);
+}
+
+.box a {
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.box img {
+    width: 18px;
+    height: 18px;
+}
+
+.card {
+    border-radius: 10px;
+    border: none;
+}
+.card img {
+    width: 100%;
+    border-radius: inherit;
+}
+.card img.icon {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+.name {
+    font-size: 15px;
+    line-height: 1.8rem;
+}
+.weight {
+    font-size: 13px;
+    color: gray;
+}
+.price {
+    font-size: 11px;
+    font-weight: 600;
+}
+.price strong {
+    font-size: 16px;
+    color: black;
+}
+
+.btn.btn-success {
+    border-radius: 7px;
+    background: var(--color-green-primary);
+    border: none;
+    padding: 0 12px;
+    box-shadow: 0 0 15px rgb(222, 222, 222);
+    font-size: 1.6rem;
+}
+.btn.btn-success:hover {
+    background: #02e386;
+}
+.btn.btn-success:focus {
+    box-shadow: 0 0 5px var(--color-green-primary);
+}
+
+.btn.btn-outline-success {
+    position: relative;
+    left: 50%;
+    width: 40%;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--color-green-primary);
+    border: 2px solid var(--color-green-primary);
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: 0.5s;
+}
+.btn.btn-outline-success:hover {
+    color: white;
+    background: var(--color-green-primary);
+}
+.btn.btn-outline-success::before,
+.btn.btn-outline-success::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: var(--color-green-primary);
+    transition: 0.5s;
+    z-index: -1;
+}
+.btn.btn-outline-success::before {
+    left: 0;
+}
+.btn.btn-outline-success::after {
+    right: 0;
+}
+.btn.btn-outline-success:hover::before,
+.btn.btn-outline-success:hover::after {
+    width: 50%;
+}
+.btn.btn-outline-success:focus {
+    box-shadow: 0 0 5px var(--color-green-primary);
+}
+
+footer {
+    position: relative;
+    background: rgb(51, 51, 51);
+    overflow: hidden;
+}
+.menu {
+    padding: 50px 150px;
+}
+footer img {
+    width: 100%;
+    height: auto;
+}
+.google-play,
+.apple-store {
+    border: 1px solid rgb(143, 142, 142);
+    border-radius: 5px;
+}
+footer li {
+    list-style: none;
+}
+footer li a {
+    font-size: 14px;
+}
+footer li a:hover {
+    text-decoration: none;
+    color: gainsboro;
+}
+.footer-menu a {
+    color: rgb(143, 142, 142);
+}
+.social-media a {
+    color: gainsboro;
+}
+.motif-0 {
+    position: absolute;
+    margin-top: -175px;
+    left: -50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 30px solid rgb(238, 238, 238);
+    z-index: -1;
+}
+
+.motif-1 {
+    position: absolute;
+    margin-top: -35px;
+    left: -120px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 30px solid rgb(60, 60, 60);
+}
+.motif-2 {
+    position: absolute;
+    margin-top: -150px;
+    right: -100px;
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 30px solid rgb(60, 60, 60);
+}
+.subtitle-cart {
+    font-size: 15px;
+    color: gray;
+}
+textarea {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(222, 222, 222);
+}
+textarea::placeholder {
+    font-size: 14px;
+    padding-left: 3px;
+}
+textarea:focus {
+    box-shadow: 0 0 5px rgb(222, 222, 222);
+}
+
+.cart-list {
+    width: 100%;
+    height: 300px;
+    overflow: auto;
+}
+.box-cart {
+    min-width: 100%;
+    height: 120px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+}
+
+.box-cart img {
+    width: 100px;
+}
+.box-cart input[type="text"] {
+    width: 45px;
+    border: none;
+}
+.quantity {
+    position: relative;
+    bottom: 0;
+}
+.coupon {
+    border-radius: 10px;
+    border: 1px solid var(--color-green-primary);
+}
+.coupon img {
+    width: 40px;
+}
+
+.diskon-title h6 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 600;
+    color: var(--color-green-primary);
+}
+
+.summary ul li {
+    list-style: none;
+    color: rgb(148, 148, 148);
+}
+
+.cash li {
+    font-size: 12px;
+}
+.cash li span {
+    font-size: 16px;
+}
+.detail-cash {
+    transform: translateX(-25%);
+}
+.total h6:nth-child(2) {
+    font-size: 12px;
+}
+.total h6:nth-child(2) span {
+    font-size: 16px;
+}
+
+.card.bs-dark {
+    box-shadow: 0 0 10px rgb(222, 222, 222);
+}
+.card .card {
+    border-radius: 12px;
+}
+.virAccount {
+    color: rgb(167, 167, 167);
+    font-size: 14px;
+}
+.btn.btn-success.checkout {
+    position: relative;
+    left: 50%;
+    font-size: 16px;
+    width: 40%;
+    height: 40px;
+    transform: translateX(-50%);
+}
+.checkout span {
+    font-size: 12px;
+}
+img.location {
+    width: 25px;
+}
+#result {
+    font-size: 15px;
+    color: rgb(167, 167, 167);
+}
